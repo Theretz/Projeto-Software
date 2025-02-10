@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Aula_1 {
+module Aula {
 }
