@@ -14,7 +14,7 @@ public class OperadoresLogicos {
 		String login = sc.next();
 		String senha = sc.next();
 		
-		if (login == loginSalvo && senha == senhaSalva) {
+		if (login.equals(loginSalvo) && senha.equals(senhaSalva)) {
 			System.out.println("Acesso liberado");
 		} else {
 			System.out.println("Acesso negado");
