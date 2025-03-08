@@ -38,6 +38,7 @@ public class Desafio03 {
 			break;
 		default:
 			System.out.println("opção inválida");
+		sc.close();
 		}
 	}
 

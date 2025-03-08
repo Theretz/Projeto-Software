@@ -32,6 +32,6 @@ public class Desafio04 {
 		} else {
 			System.out.println("Sinto muito mas não temos nenhum plano de seguro para você");
 		}
-		
+		sc.close();
 	}
 }
