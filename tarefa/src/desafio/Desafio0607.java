@@ -2,9 +2,10 @@ package desafio;
 
 import java.util.Scanner;
 
-public class Desafio06 {
+public class Desafio0607 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+	
 		//Verificação do triângulo válido 
 		//programa que recebe os lados dos triângulos
 		//Verificar se o triângulo é válido
