@@ -15,16 +15,28 @@ public class LoopWhile {
 		String login = "";
 		String senha = "";
 		
-		while (!(login.equals(loginSalvo)) && !(senha.equals(senhaSalva))) {
+		int tentativas = 1;
+		
+		boolean loop = true;
+	
+		
+		while (!(login.equals(loginSalvo)) && !(senha.equals(senhaSalva)) && loop && tentativas<6) {
+			
+			tentativas++;
+			
 			System.out.println("Informe seu login: ");
 			login = sc.nextLine();
 			
 			System.out.println("Informe sua senha: ");
 			senha = sc.nextLine();
 		}
-			
-		System.out.println("Aceesso liberado");
-		sc.close();
+		
+		if(!(login.equals(loginSalvo)) && !(senha.equals(senhaSalva)) && loop && tentativas<6) {
+			System.out.println("Acesso Liberado");
+		} else {
+			System.out.println("Acesso Negado");
+		}
 	}
-
 }
+
+
