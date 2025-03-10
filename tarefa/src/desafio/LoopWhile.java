@@ -20,7 +20,7 @@ public class LoopWhile {
 		boolean loop = true;
 	
 		
-		while (!(login.equals(loginSalvo)) && !(senha.equals(senhaSalva)) && loop && tentativas<6) {
+		while (!(login.equals(loginSalvo)) || !(senha.equals(senhaSalva)) && loop && tentativas<6) {
 			
 			tentativas++;
 			
@@ -31,7 +31,7 @@ public class LoopWhile {
 			senha = sc.nextLine();
 		}
 		
-		if(!(login.equals(loginSalvo)) && !(senha.equals(senhaSalva)) && loop && tentativas<6) {
+		if((login.equals(loginSalvo)) || (senha.equals(senhaSalva))) {
 			System.out.println("Acesso Liberado");
 		} else {
 			System.out.println("Acesso Negado");
