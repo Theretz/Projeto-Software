@@ -1,10 +1,12 @@
 package desafio;
 
 public class Aluno {
+	String nome = new String();
+	int n1;
+	int n2;
+	int n3;
+}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+public double media() {
+	
 }
