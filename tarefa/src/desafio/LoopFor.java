@@ -10,10 +10,8 @@ public class LoopFor {
 		System.out.println("Informe um número: ");
 		int num = sc.nextInt();
 		
-		for(int i=1; 1<=10; i++) {
+		for(int i=0; 1<=10; i++) {
 			System.out.println(num + "*" + i + "=" + num*i);
 		}	
-		sc.close();
-		
 	}	
 }
